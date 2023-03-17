@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="44" passed="21" failed="14" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-13T15:24:12 IST" name="Default suite" finished-at="2023-02-13T15:24:35 IST" duration-ms="22334">
+    <groups>
+      <group name="bvt">
+        <method signature="Demo_dependencies.thirdtest()[pri:3, instance:testNG_proj.Demo_dependencies@1e66f1f5]" name="thirdtest" class="testNG_proj.Demo_dependencies"/>
+      </group> <!-- bvt -->
+      <group name="functional">
+        <method signature="Demo_dependencies.login()[pri:2, instance:testNG_proj.Demo_dependencies@1e66f1f5]" name="login" class="testNG_proj.Demo_dependencies"/>
+      </group> <!-- functional -->
+      <group name="smoke">
+        <method signature="Demo_dependencies.userregistration()[pri:1, instance:testNG_proj.Demo_dependencies@1e66f1f5]" name="userregistration" class="testNG_proj.Demo_dependencies"/>
+        <method signature="Demo_003.pro_01()[pri:3, instance:action.Demo_003@394df057]" name="pro_01" class="action.Demo_003"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-02-13T15:24:12 IST" name="Default test" finished-at="2023-02-13T15:24:35 IST" duration-ms="22334">
+      <class name="action.assert_equals">
+        <test-method signature="sample_test1()[pri:0, instance:action.assert_equals@707194ba]" started-at="2023-02-13T15:24:30 IST" name="sample_test1" finished-at="2023-02-13T15:24:35 IST" duration-ms="4141" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AJIT-LAP', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56f56227a01407d8d603d9593d75dd94, get {url=https://omayo.blogspot.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\AJITKU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61670/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56f56227a01407d8d603d9593d75dd94]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AJIT-LAP', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56f56227a01407d8d603d9593d75dd94, get {url=https://omayo.blogspot.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\AJITKU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61670/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56f56227a01407d8d603d9593d75dd94
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+at action.assert_equals.sample_test1(assert_equals.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:124)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+... 28 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample_test1 -->
+      </class> <!-- action.assert_equals -->
+      <class name="testNg_practice.DataProviderPractice">
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testNg_practice.DataProviderPractice@65d09a04]" started-at="2023-02-13T15:24:30 IST" name="doLogin" data-provider="getData" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vikas@tlp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ajit@tlp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testNg_practice.DataProviderPractice@65d09a04]" started-at="2023-02-13T15:24:30 IST" name="doLogin" data-provider="getData" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anjali@tlp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amit@tlp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testNg_practice.DataProviderPractice@65d09a04]" started-at="2023-02-13T15:24:30 IST" name="doLogin" data-provider="getData" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajni@tlp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pranhya@tlp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+      </class> <!-- testNg_practice.DataProviderPractice -->
+      <class name="testNg_practice.TestNg_dependency">
+        <test-method signature="testcase1()[pri:2, instance:testNg_practice.TestNg_dependency@279fedbd]" started-at="2023-02-13T15:24:12 IST" name="testcase1" finished-at="2023-02-13T15:24:12 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[registration is not success]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: registration is not success
+at org.testng.Assert.fail(Assert.java:110)
+at testNg_practice.TestNg_dependency.testcase1(TestNg_dependency.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase3()[pri:1, instance:testNg_practice.TestNg_dependency@279fedbd]" started-at="2023-02-13T15:24:12 IST" name="testcase3" finished-at="2023-02-13T15:24:12 IST" depends-on-methods="testNg_practice.TestNg_dependency.testcase1" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method signature="testcase2()[pri:3, instance:testNg_practice.TestNg_dependency@279fedbd]" started-at="2023-02-13T15:24:12 IST" name="testcase2" finished-at="2023-02-13T15:24:12 IST" depends-on-methods="testNg_practice.TestNg_dependency.testcase1" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testNg_practice.TestNg_dependency.testcase2() on instance testNg_practice.TestNg_dependency@279fedbd depends on not successfully finished methods 
+[testNg_practice.TestNg_dependency.testcase1() on instance testNg_practice.TestNg_dependency@279fedbd]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testNg_practice.TestNg_dependency.testcase2() on instance testNg_practice.TestNg_dependency@279fedbd depends on not successfully finished methods 
+[testNg_practice.TestNg_dependency.testcase1() on instance testNg_practice.TestNg_dependency@279fedbd]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+      </class> <!-- testNg_practice.TestNg_dependency -->
+      <class name="regression.Demo_validation">
+        <test-method signature="validtitiles()[pri:0, instance:regression.Demo_validation@1190200a]" started-at="2023-02-13T15:24:35 IST" name="validtitiles" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Yahoo.com] but found [Gmail.com],
+page not found expected [false] but found [true],
+checkbox not present expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Yahoo.com] but found [Gmail.com],
+page not found expected [false] but found [true],
+checkbox not present expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at regression.Demo_validation.validtitiles(Demo_validation.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validtitiles -->
+      </class> <!-- regression.Demo_validation -->
+      <class name="p_pack.t2_progarm">
+        <test-method is-config="true" signature="hit()[pri:0, instance:p_pack.t2_progarm@4e50c791]" started-at="2023-02-13T15:24:17 IST" name="hit" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hit -->
+        <test-method signature="startplaying()[pri:2, instance:p_pack.t2_progarm@4e50c791]" started-at="2023-02-13T15:24:17 IST" name="startplaying" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startplaying -->
+        <test-method signature="test()[pri:3, instance:p_pack.t2_progarm@4e50c791]" started-at="2023-02-13T15:24:17 IST" name="test" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="run()[pri:0, instance:p_pack.t2_progarm@4e50c791]" started-at="2023-02-13T15:24:17 IST" name="run" finished-at="2023-02-13T15:24:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- p_pack.t2_progarm -->
+      <class name="testNG_proj.failuretest">
+        <test-method signature="dologin()[pri:0, instance:testNG_proj.failuretest@6a2f6f80]" started-at="2023-02-13T15:24:35 IST" name="dologin" finished-at="2023-02-13T15:24:35 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failing login test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: failing login test case
+at org.testng.Assert.fail(Assert.java:110)
+at testNG_proj.failuretest.dologin(failuretest.java:11)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dologin -->
+      </class> <!-- testNG_proj.failuretest -->
+      <class name="testNG_proj.Demo_validation">
+        <test-method signature="validtitiles()[pri:0, instance:testNG_proj.Demo_validation@7530ad9c]" started-at="2023-02-13T15:24:17 IST" name="validtitiles" finished-at="2023-02-13T15:24:17 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Yahoo.com] but found [Gmail.com],
+page not found expected [false] but found [true],
+checkbox not present expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Yahoo.com] but found [Gmail.com],
+page not found expected [false] but found [true],
+checkbox not present expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testNG_proj.Demo_validation.validtitiles(Demo_validation.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validtitiles -->
+      </class> <!-- testNG_proj.Demo_validation -->
+      <class name="regression.Demo_annotation">
+        <test-method is-config="true" signature="creat()[pri:0, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:12 IST" name="creat" finished-at="2023-02-13T15:24:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creat -->
+        <test-method is-config="true" signature="launching()[pri:0, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="launching" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method signature="userreg()[pri:1, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="userreg" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userreg -->
+        <test-method is-config="true" signature="close()[pri:0, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="close" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="login()[pri:2, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="login" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="launching()[pri:0, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="launching" finished-at="2023-02-13T15:24:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method is-config="true" signature="close()[pri:0, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="close" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="end()[pri:0, instance:regression.Demo_annotation@45b4c3a9]" started-at="2023-02-13T15:24:35 IST" name="end" finished-at="2023-02-13T15:24:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- regression.Demo_annotation -->
+      <class name="c_pack.new_exception">
+        <test-method signature="program_001()[pri:0, instance:c_pack.new_exception@7817fd62]" started-at="2023-02-13T15:24:12 IST" name="program_001" finished-at="2023-02-13T15:24:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- program_001 -->
+        <test-method signature="program_002()[pri:0, instance:c_pack.new_exception@7817fd62]" started-at="2023-02-13T15:24:12 IST" name="program_002" finished-at="2023-02-13T15:24:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- program_002 -->
+        <test-method signature="program_003()[pri:0, instance:c_pack.new_exception@7817fd62]" started-at="2023-02-13T15:24:12 IST" name="program_003" finished-at="2023-02-13T15:24:17 IST" duration-ms="5034" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method c_pack.new_exception.program_003() didn't finish within the time-out 5000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method c_pack.new_exception.program_003() didn't finish within the time-out 5000
+at java.base@18/java.lang.Thread.sleep(Native Method)
+at app//c_pack.new_exception.program_003(new_exception.java:23)
+at java.base@18/java.lang.invoke.LambdaForm$DMH/0x0000000800d1c000.invokeVirtual(LambdaForm$DMH)
+at java.base@18/java.lang.invoke.LambdaForm$MH/0x0000000800d1c800.invoke(LambdaForm$MH)
+at java.base@18/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+at java.base@18/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+at java.base@18/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base@18/java.lang.reflect.Method.invoke(Method.java:577)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@18/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base@18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base@18/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- program_003 -->
+        <test-method signature="program_004()[pri:0, instance:c_pack.new_exception@7817fd62]" started-at="2023-02-13T15:24:17 IST" name="program_004" finished-at="2023-02-13T15:24:17 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- program_004 -->
+      </class> <!-- c_pack.new_exception -->
+      <class name="testNg_practice.DemoTestmg">
+        <test-method is-config="true" signature="createConnection()[pri:0, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:12 IST" name="createConnection" finished-at="2023-02-13T15:24:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConnection -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:17 IST" name="launchBrowser" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="userRegister()[pri:1, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:17 IST" name="userRegister" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegister -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:17 IST" name="closeBrowser" finished-at="2023-02-13T15:24:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="doLogin()[pri:2, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:17 IST" name="doLogin" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:17 IST" name="launchBrowser" finished-at="2023-02-13T15:24:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:17 IST" name="closeBrowser" finished-at="2023-02-13T15:24:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeConnection()[pri:0, instance:testNg_practice.DemoTestmg@58a9760d]" started-at="2023-02-13T15:24:35 IST" name="closeConnection" finished-at="2023-02-13T15:24:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- testNg_practice.DemoTestmg -->
+      <class name="testNG_proj.Demo_annotation">
+        <test-method is-config="true" signature="creat()[pri:0, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:12 IST" name="creat" finished-at="2023-02-13T15:24:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creat -->
+        <test-method signature="userreg()[pri:1, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:30 IST" name="userreg" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userreg -->
+        <test-method is-config="true" signature="launching()[pri:0, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:30 IST" name="launching" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:30 IST" name="close" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="login()[pri:2, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:30 IST" name="login" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="launching()[pri:0, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:30 IST" name="launching" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:30 IST" name="close" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="end()[pri:0, instance:testNG_proj.Demo_annotation@75db5df9]" started-at="2023-02-13T15:24:35 IST" name="end" finished-at="2023-02-13T15:24:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testNG_proj.Demo_annotation -->
+      <class name="action.Demo_001">
+        <test-method signature="demo1()[pri:0, instance:action.Demo_001@71e9ddb4]" started-at="2023-02-13T15:24:17 IST" name="demo1" finished-at="2023-02-13T15:24:29 IST" duration-ms="11962" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AJIT-LAP', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2deab11823e533ae6d2642eb0020fd67, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\AJITKU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61630}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61630/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2deab11823e533ae6d2642eb0020fd67]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AJIT-LAP', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2deab11823e533ae6d2642eb0020fd67, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\AJITKU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61630}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61630/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2deab11823e533ae6d2642eb0020fd67
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+at action.Demo_001.demo1(Demo_001.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:124)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+... 28 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo1 -->
+      </class> <!-- action.Demo_001 -->
+      <class name="action.Demo_003">
+        <test-method signature="demo3()[pri:0, instance:action.Demo_003@394df057]" started-at="2023-02-13T15:24:29 IST" name="demo3" finished-at="2023-02-13T15:24:30 IST" duration-ms="1010" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 110.0.5481.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AJIT-LAP', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 110.0.5481.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'AJIT-LAP', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
+at action.Demo_003.demo3(Demo_003.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo3 -->
+        <test-method signature="pro_01()[pri:3, instance:action.Demo_003@394df057]" started-at="2023-02-13T15:24:30 IST" name="pro_01" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pro_01 -->
+      </class> <!-- action.Demo_003 -->
+      <class name="testNg_practice.ValidateTitle">
+        <test-method signature="validateBrwTitle()[pri:0, instance:testNg_practice.ValidateTitle@8297b3a]" started-at="2023-02-13T15:24:17 IST" name="validateBrwTitle" finished-at="2023-02-13T15:24:17 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title is not matching expected [www.yahoo.com] but found [www.google.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title is not matching expected [www.yahoo.com] but found [www.google.com]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at testNg_practice.ValidateTitle.validateBrwTitle(ValidateTitle.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBrwTitle -->
+      </class> <!-- testNg_practice.ValidateTitle -->
+      <class name="testNG_proj.Demo_dependencies">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNG_proj.Demo_dependencies@1e66f1f5]" started-at="2023-02-13T15:24:12 IST" name="setup" finished-at="2023-02-13T15:24:12 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="userregistration()[pri:1, instance:testNG_proj.Demo_dependencies@1e66f1f5]" started-at="2023-02-13T15:24:17 IST" name="userregistration" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[user not registered successfully]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: user not registered successfully
+at org.testng.Assert.fail(Assert.java:110)
+at testNG_proj.Demo_dependencies.userregistration(Demo_dependencies.java:12)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userregistration -->
+        <test-method signature="login()[pri:2, instance:testNG_proj.Demo_dependencies@1e66f1f5]" started-at="2023-02-13T15:24:17 IST" name="login" finished-at="2023-02-13T15:24:17 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[capturing the screenshot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: capturing the screenshot
+at org.testng.Assert.fail(Assert.java:110)
+at testNG_proj.Demo_dependencies.login(Demo_dependencies.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="thirdtest()[pri:3, instance:testNG_proj.Demo_dependencies@1e66f1f5]" started-at="2023-02-13T15:24:17 IST" name="thirdtest" finished-at="2023-02-13T15:24:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdtest -->
+        <test-method signature="fourthtest()[pri:4, instance:testNG_proj.Demo_dependencies@1e66f1f5]" started-at="2023-02-13T15:24:17 IST" name="fourthtest" finished-at="2023-02-13T15:24:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourthtest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testNG_proj.Demo_dependencies@1e66f1f5]" started-at="2023-02-13T15:24:35 IST" name="TearDown" finished-at="2023-02-13T15:24:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testNG_proj.Demo_dependencies -->
+      <class name="opack.t_program">
+        <test-method signature="homepage(java.lang.String)[pri:0, instance:opack.t_program@4961f6af]" started-at="2023-02-13T15:24:30 IST" name="homepage" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method homepage but has not been marked @Optional or defined
+in C:\Users\AjitKumarSingh\AppData\Local\Temp\testng-eclipse--1593417086\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method homepage but has not been marked @Optional or defined
+in C:\Users\AjitKumarSingh\AppData\Local\Temp\testng-eclipse--1593417086\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method signature="login(java.lang.String)[pri:0, instance:opack.t_program@4961f6af]" started-at="2023-02-13T15:24:30 IST" name="login" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method login but has not been marked @Optional or defined
+in C:\Users\AjitKumarSingh\AppData\Local\Temp\testng-eclipse--1593417086\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method login but has not been marked @Optional or defined
+in C:\Users\AjitKumarSingh\AppData\Local\Temp\testng-eclipse--1593417086\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="loginpage(java.lang.String)[pri:0, instance:opack.t_program@4961f6af]" started-at="2023-02-13T15:24:30 IST" name="loginpage" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method loginpage but has not been marked @Optional or defined
+in C:\Users\AjitKumarSingh\AppData\Local\Temp\testng-eclipse--1593417086\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method loginpage but has not been marked @Optional or defined
+in C:\Users\AjitKumarSingh\AppData\Local\Temp\testng-eclipse--1593417086\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+      </class> <!-- opack.t_program -->
+      <class name="testNg_practice.dataprovider_practice001">
+        <test-method signature="dataPro(java.lang.String,java.lang.String)[pri:0, instance:testNg_practice.dataprovider_practice001@5aebe890]" started-at="2023-02-13T15:24:30 IST" name="dataPro" data-provider="getdata" finished-at="2023-02-13T15:24:30 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ajit@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataPro -->
+        <test-method signature="dataPro(java.lang.String,java.lang.String)[pri:0, instance:testNg_practice.dataprovider_practice001@5aebe890]" started-at="2023-02-13T15:24:30 IST" name="dataPro" data-provider="getdata" finished-at="2023-02-13T15:24:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ankit@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1245600]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataPro -->
+        <test-method signature="dataPro(java.lang.String,java.lang.String)[pri:0, instance:testNg_practice.dataprovider_practice001@5aebe890]" started-at="2023-02-13T15:24:30 IST" name="dataPro" data-provider="getdata" finished-at="2023-02-13T15:24:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[viksha@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[458756]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataPro -->
+      </class> <!-- testNg_practice.dataprovider_practice001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+package array;
+
+public class max_practice {
+	public static void main(String[]args)
+	{
+		int []a= {1,2,3,4,5,6,7,8,9,11,7,6,11};
+		int max = a[0];
+		for(int i=0;i<a.length-1;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				if(max<a[j])
+				{
+					max=a[j];
+				}
+			}
+			
+		}
+		System.out.println(max);
+	}
+
+}

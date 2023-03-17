@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+	
+
+
+
+
+	<suite name="Functional test suite">
+	<listeners>
+	<listener class-name="customlisteners.Listeners"></listener>
+	</listeners>
+		<test name="Login Test">
+		<groups>
+		<run>
+
+			<include name="vbt"></include>
+
+		</run>
+
+
+	</groups>
+			<classes>
+				<class name="testNG_proj.Demo_validation" />
+
+			</classes>
+		</test> <!-- Test -->
+
+		<test name="Validate title Test">
+			<classes>
+
+				<class name="testNG_proj.Demo_dependencies" />
+			</classes>
+		</test> <!-- Test -->
+		<test name="Dependency Test">
+			<classes>
+
+				<class name="testNG_proj.Demo_annotation" />
+
+			</classes>
+		</test> <!-- Test -->
+		<test name="Validate title Test">
+			<classes>
+
+				<class name="testNG_proj.failuretest" />
+			</classes>
+		</test> <!-- Test -->
+
+	</suite> <!-- Suite -->
+
+

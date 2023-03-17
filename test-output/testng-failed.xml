@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="opack.t_program">
+        <methods>
+          <include name="homepage"/>
+          <include name="login"/>
+          <include name="loginpage"/>
+        </methods>
+      </class> <!-- opack.t_program -->
+      <class name="regression.Demo_validation">
+        <methods>
+          <include name="validtitiles"/>
+        </methods>
+      </class> <!-- regression.Demo_validation -->
+      <class name="testNG_proj.Demo_validation">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="validtitiles"/>
+        </methods>
+      </class> <!-- testNG_proj.Demo_validation -->
+      <class name="action.Demo_001">
+        <methods>
+          <include name="demo1"/>
+        </methods>
+      </class> <!-- action.Demo_001 -->
+      <class name="testNg_practice.TestNg_dependency">
+        <methods>
+          <include name="testcase2"/>
+          <include name="testcase1"/>
+        </methods>
+      </class> <!-- testNg_practice.TestNg_dependency -->
+      <class name="action.assert_equals">
+        <methods>
+          <include name="sample_test1"/>
+        </methods>
+      </class> <!-- action.assert_equals -->
+      <class name="testNg_practice.ValidateTitle">
+        <methods>
+          <include name="validateBrwTitle"/>
+        </methods>
+      </class> <!-- testNg_practice.ValidateTitle -->
+      <class name="testNG_proj.failuretest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="dologin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testNG_proj.failuretest -->
+      <class name="testNG_proj.Demo_dependencies">
+        <methods>
+          <include name="login"/>
+          <include name="TearDown"/>
+          <include name="userregistration"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testNG_proj.Demo_dependencies -->
+      <class name="action.Demo_003">
+        <methods>
+          <include name="demo3"/>
+        </methods>
+      </class> <!-- action.Demo_003 -->
+      <class name="c_pack.new_exception">
+        <methods>
+          <include name="program_003"/>
+        </methods>
+      </class> <!-- c_pack.new_exception -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
